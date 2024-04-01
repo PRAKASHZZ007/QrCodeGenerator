@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.qr-img{
+    width: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-label{
+    display: block;
+    margin-bottom: 8px;
+    color:#3498db;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+    width: 100%;
+    margin-bottom:15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+    padding:8px;
+    margin-right: 8px;
+    border: none;
+    color:#ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    width:100%;
+    padding:8px;
+    border:2px solid #3498db;
+}
+
+h1{
+    color: #3498db;
+}
+
+.generate-btn{
+    background-color: #3498db;
+}
+.generate-btn:disabled{
+    background-color: #bdc3c7;
+    cursor:not-allowed;
+}
+
+.download-btn{
+    background-color: #27ae60;
+    margin-left: 10px;
+}
+.download-btn:hover{
+    background-color: #219a52;
 }
