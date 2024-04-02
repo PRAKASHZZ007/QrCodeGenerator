@@ -10,7 +10,7 @@ const QrCode = () => {
   async function generateQr() {
     setLoading(true);
     try {
-      const url = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}*${qrSize}&data=${qrData}`;
+      const url = `https://api.qrserver.com/v1/create-qr-code/?size=${qrSize}x${qrSize}&data=${qrData}`;
       setImg(url);
     } catch (error) {
       console.error(error);
